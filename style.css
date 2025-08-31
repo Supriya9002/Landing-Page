@@ -162,7 +162,7 @@ body {
 /* Home section */
 .home-section {
   position: relative;
-  height: 600px;
+  height: auto;
   margin-top: -80px;
 }
 .home-section .home-sec-icon-container {
@@ -192,7 +192,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  height: calc(600px - 80px);
+  /* height: calc(600px - 80px); */
   background: linear-gradient(135deg, #09103e 0%, #1d1350 50%, #3d1868 100%);
 }
 
@@ -209,7 +209,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 520px;
   width: 100%;
 }
 /* 
@@ -418,7 +418,7 @@ Form card
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 150px;
   padding: 50px 20px;
   flex-wrap: wrap;
 }
@@ -439,12 +439,12 @@ Form card
 }
 
 .stat-item::before {
-  left: -50px;
+  left: -70px;
   transform: scaleX(-1); /* mirror left laurel */
 }
 
 .stat-item::after {
-  right: -50px;
+  right: -70px;
 }
 
 .stat-item strong {
@@ -819,7 +819,7 @@ Form card
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
-  max-width:100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -1040,7 +1040,7 @@ Form card
     gap: 30px;
   }
 
-  .logo-section {
+  .logo-section-2 {
     width: 100%;
     text-align: center;
   }
@@ -1130,4 +1130,12 @@ Form card
 .common-register-btn.navy .txt-section {
   background-color: var(--white);
   color: var(--navy-blue);
+}
+
+/* 
+===========Responsive desing====================== */
+@media (max-width: 1000px) {
+  .home-sec-content {
+    flex-direction: column;
+  }
 }
